@@ -26,6 +26,8 @@
 
 REP 中断频率按 `fPWM / (RepetitionCounter + 1)` 推算。所有示例的输入 OVP/UVP 分别为 24 V/8 V，输出 OCP 为 3.6 A；恒流示例的电流环使用与同一示例电压环相同的 `Kp/Ki`。
 
+例程 1～3 的逐檔差異、占空比限制、軟啟動／保護時間尺度與原始碼位置，另見 [EXAMPLES_1_3_VOLTAGE_VARIANT_COMPARISON.md](EXAMPLES_1_3_VOLTAGE_VARIANT_COMPARISON.md)。
+
 ## 3. 模块视图
 
 ```mermaid

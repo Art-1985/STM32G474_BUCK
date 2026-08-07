@@ -33,6 +33,11 @@
 
 REP 頻率按 `fPWM / (REP + 1)` 推算，仍需板上量測確認。
 
+- 例程 1～3 共比較 256 個相對路徑檔案，249 個逐位元組相同；7 個不同檔案中，控制行為差異集中於 `state_machine.c`、`PID.c`、`HRTIM.c`。詳細證據見 [docs/EXAMPLES_1_3_VOLTAGE_VARIANT_COMPARISON.md](docs/EXAMPLES_1_3_VOLTAGE_VARIANT_COMPARISON.md)。
+- 例程 1 的 PI duty 上限約 50%，例程 2/3 約 65%；例程 3 另修改 PI 係數與 REP 更新率。
+- `PID_INT()` 的 0.01／0.015 係數只產生約 20／30 count 的 `Pulse_width` RAM 初值，沒有直接寫入 HRTIM；第一次 `PID_loop()` 會在寫 CMP 前覆寫它，不應誤當成有效起始 duty。
+- 例程 1 在 `HRTIM_INT()` 額外執行 `DISdriver`，例程 2/3 沒有；三者稍後仍都由 `Reset_VAR()` 執行 `DISdriver + ODISR`。這是待板測的啟動安全漂移，不是已證實的電壓需求。
+
 ## 已知陷阱
 
 - ISR 與前台共享的旗標、量測值及參考值沒有完整的 `volatile`/一致性設計。
@@ -48,6 +53,7 @@ REP 頻率按 `fPWM / (REP + 1)` 推算，仍需板上量測確認。
 
 - 穩定架構入口：[ARCHITECTURE.md](ARCHITECTURE.md)
 - C4 系統邊界、容器、元件與部署：[docs/C4.md](docs/C4.md)
+- 例程 1～3 輸出電壓版本逐檔比較：[docs/EXAMPLES_1_3_VOLTAGE_VARIANT_COMPARISON.md](docs/EXAMPLES_1_3_VOLTAGE_VARIANT_COMPARISON.md)
 - UML、狀態機、時序、資料流：[docs/UML.md](docs/UML.md)
 - 函式與硬體事件呼叫圖：[docs/CALL_GRAPH.md](docs/CALL_GRAPH.md)
 - 當前進度：[PROGRESS.md](PROGRESS.md)

@@ -1,6 +1,6 @@
 # STM32G474_BUCK Call Graph
 
-本文档给出 6 个示例共享的应用级调用图。架构、状态机、时序和参数差异见 [UML.md](UML.md)。
+本文档给出 6 个示例共享的应用级调用图。架构、状态机、时序和参数差异见 [UML.md](UML.md)；例程 1～3 的輸出電壓版本逐檔比較見 [EXAMPLES_1_3_VOLTAGE_VARIANT_COMPARISON.md](EXAMPLES_1_3_VOLTAGE_VARIANT_COMPARISON.md)。
 
 ## 1. 图例与边界
 

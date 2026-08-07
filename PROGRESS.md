@@ -12,6 +12,7 @@
 | UML 與狀態機 | 完成 | [docs/UML.md](docs/UML.md) |
 | 應用呼叫圖 | 完成 | [docs/CALL_GRAPH.md](docs/CALL_GRAPH.md) |
 | C4 架構模型 | 完成 | [docs/C4.md](docs/C4.md) |
+| 例程 1～3 電壓版本比較 | 完成 | [docs/EXAMPLES_1_3_VOLTAGE_VARIANT_COMPARISON.md](docs/EXAMPLES_1_3_VOLTAGE_VARIANT_COMPARISON.md) |
 | 根目錄架構入口 | 完成 | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | 專案治理文件 | 完成 | `AGENTS/PLAN/PROGRESS/DECISIONS/TASKS/MEMORY/CHANGELOG` |
 | Mermaid 語法驗證 | 完成 | 根目錄與 `docs/` 共 14 個圖表已由 Mermaid CLI 實際渲染 |
@@ -27,6 +28,7 @@
 - HRTIM Timer A 產生 TA1/TA2 PWM、CMP3 ADC 觸發及 REP 中斷。
 - REP ISR 負責 ADC 工程量換算、PI 更新與軟啟動參考值遞增；前台狀態機負責 OVP/UVP/OCP 與輸出門控。
 - 例程 1～3 為電壓單環；例程 4～6 為電壓/電流雙環競爭。
+- 例程 1～3 的 256 個相對路徑檔案中，249 個逐位元組相同；功能差異不只 `Target_voltage`，還包含輸出 OVP、PI 上限／係數、REP 更新率及一項待確認的 `DISdriver` 啟動漂移。
 - 目前所有 HRTIM fault 輸入停用，保護主要是前台軟體路徑。
 
 ## 已識別但尚未修正
