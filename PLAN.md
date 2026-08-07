@@ -14,6 +14,7 @@
 狀態：已完成。
 
 - 建立應用模組 UML、狀態機、控制時序與資料流。
+- 建立 C4 System Context、Container、Component 與 Deployment View。
 - 建立啟動、前台與 HRTIM ISR 呼叫圖。
 - 建立根目錄協作、計畫、進度、決策、任務、記憶、變更及架構文件。
 - 記錄六個例程的控制模式、PWM/REP 與主要參數差異。

@@ -20,7 +20,7 @@
 - 每個例程的 `mycode/`：應用控制、ADC、HRTIM、狀態機、延遲與板級 IO。
 - 每個例程的 `User_code/`：`main.c`、系統初始化、例外與 HAL MSP。
 - 每個例程的 `HAL_lib/`、`MDK/`：供應商函式庫、CMSIS、啟動檔與 Keil 工程。
-- `docs/`：詳細 UML 與呼叫圖。
+- `docs/`：詳細 C4、UML 與呼叫圖。
 - 根目錄管理文件：計畫、進度、決策、任務、記憶、變更與架構入口。
 
 ## 工作前必讀
@@ -28,7 +28,7 @@
 依工作類型閱讀最小必要文件：
 
 1. 先讀 [ARCHITECTURE.md](ARCHITECTURE.md) 與 [MEMORY.md](MEMORY.md)。
-2. 修改即時控制或保護前，必須讀 [docs/UML.md](docs/UML.md) 與 [docs/CALL_GRAPH.md](docs/CALL_GRAPH.md)。
+2. 修改即時控制或保護前，必須讀 [docs/C4.md](docs/C4.md)、[docs/UML.md](docs/UML.md) 與 [docs/CALL_GRAPH.md](docs/CALL_GRAPH.md)。
 3. 開始新工作前檢查 [TASKS.md](TASKS.md)、[PLAN.md](PLAN.md) 與 [DECISIONS.md](DECISIONS.md)。
 4. 使用 `git status --short` 確認使用者既有變更；不得覆寫或清除不屬於目前任務的修改。
 
@@ -48,7 +48,7 @@
 
 完成工作時依影響更新：
 
-- 架構、狀態機、即時資料流改變：更新 `ARCHITECTURE.md`、`docs/UML.md`、`docs/CALL_GRAPH.md`。
+- 系統邊界、部署、架構、狀態機或即時資料流改變：依影響更新 `ARCHITECTURE.md`、`docs/C4.md`、`docs/UML.md`、`docs/CALL_GRAPH.md`。
 - 做出會約束後續實作的選擇：追加 `DECISIONS.md`，不要覆寫歷史決策。
 - 任務狀態改變：更新 `TASKS.md` 與 `PROGRESS.md`。
 - 新增長期有效的專案事實或陷阱：更新 `MEMORY.md`。

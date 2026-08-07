@@ -1,6 +1,6 @@
 # STM32G474_BUCK 架構
 
-本文件是倉庫根目錄的架構入口。完整 UML、狀態機與控制時序見 [docs/UML.md](docs/UML.md)，完整函式呼叫與硬體事件圖見 [docs/CALL_GRAPH.md](docs/CALL_GRAPH.md)。
+本文件是倉庫根目錄的架構入口。系統邊界、邏輯容器、元件與部署見 [docs/C4.md](docs/C4.md)，完整 UML、狀態機與控制時序見 [docs/UML.md](docs/UML.md)，完整函式呼叫與硬體事件圖見 [docs/CALL_GRAPH.md](docs/CALL_GRAPH.md)。
 
 ## 系統概觀
 
@@ -121,6 +121,7 @@ PI 採增量形式。雙環示例分別計算 `V_PI` 與 `I_PI`，以較小輸�
 
 ## 維護文件導覽
 
+- [docs/C4.md](docs/C4.md)：System Context、Container、Component 與 Deployment View。
 - [PLAN.md](PLAN.md)：分階段改善方向。
 - [PROGRESS.md](PROGRESS.md)：目前完成度與驗證限制。
 - [TASKS.md](TASKS.md)：可執行任務與優先級。

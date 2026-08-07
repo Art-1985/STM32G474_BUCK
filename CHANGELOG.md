@@ -6,6 +6,7 @@
 
 ### Added
 
+- 新增 `docs/C4.md`：System Context、單一韌體映像內的邏輯 Container、應用 Component、Deployment View、跨層關鍵路徑與架構風險。
 - 新增 `docs/UML.md`：六個例程差異矩陣、模組 UML、前台狀態機、上電/閉環時序、控制資料流、並發資料所有權與程式碼審閱注意事項。
 - 新增 `docs/CALL_GRAPH.md`：總呼叫圖、初始化呼叫樹、前台狀態機呼叫圖、HRTIM ISR/PI 分支、函式索引及硬體隱式控制邊。
 - 新增 `ARCHITECTURE.md` 作為根目錄架構摘要與文件導覽。
@@ -19,6 +20,6 @@
 
 ### Validation
 
-- 使用 Mermaid CLI 實際渲染 `docs/` 中 7 個 Mermaid 圖表。
+- 使用 Mermaid CLI 實際渲染 `docs/` 中 11 個 Mermaid 圖表；連同根目錄 `ARCHITECTURE.md` 共 14 個。
 - 檢查 Markdown 相對連結、程式碼圍欄與尾端空白。
 - 尚未執行 Keil 韌體建置或硬體板測。

@@ -1,6 +1,6 @@
 # 專案進度
 
-最後更新：2026-07-31
+最後更新：2026-08-07
 
 ## 目前狀態
 
@@ -11,9 +11,10 @@
 | 倉庫與 6 個例程盤點 | 完成 | 已辨識單環與雙環兩類架構 |
 | UML 與狀態機 | 完成 | [docs/UML.md](docs/UML.md) |
 | 應用呼叫圖 | 完成 | [docs/CALL_GRAPH.md](docs/CALL_GRAPH.md) |
+| C4 架構模型 | 完成 | [docs/C4.md](docs/C4.md) |
 | 根目錄架構入口 | 完成 | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | 專案治理文件 | 完成 | `AGENTS/PLAN/PROGRESS/DECISIONS/TASKS/MEMORY/CHANGELOG` |
-| Mermaid 語法驗證 | 完成 | 7 個圖表已由 Mermaid CLI 實際渲染 |
+| Mermaid 語法驗證 | 完成 | 根目錄與 `docs/` 共 14 個圖表已由 Mermaid CLI 實際渲染 |
 | Markdown 基本檢查 | 完成 | 相對連結、圍欄、尾端空白均已檢查 |
 | 6 套 Keil 工程建置 | 尚未開始 | 尚未確認本機 Keil 命令列環境 |
 | 即時 ISR 時序量測 | 尚未開始 | 需要目標板與量測設備 |

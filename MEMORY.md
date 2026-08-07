@@ -47,6 +47,7 @@ REP 頻率按 `fPWM / (REP + 1)` 推算，仍需板上量測確認。
 ## 導航
 
 - 穩定架構入口：[ARCHITECTURE.md](ARCHITECTURE.md)
+- C4 系統邊界、容器、元件與部署：[docs/C4.md](docs/C4.md)
 - UML、狀態機、時序、資料流：[docs/UML.md](docs/UML.md)
 - 函式與硬體事件呼叫圖：[docs/CALL_GRAPH.md](docs/CALL_GRAPH.md)
 - 當前進度：[PROGRESS.md](PROGRESS.md)
